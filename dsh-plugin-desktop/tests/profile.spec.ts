@@ -138,9 +138,22 @@ describe('desktop profile composition', {
     ])).toEqual([
       '@deepseek-ai/dsh-base',
       '@deepseek-ai/dsh-web-app',
+      '@linxin666/dsh-web-all',
       'third-party-one',
       'third-party-two',
     ])
+  })
+
+  it('seeds the bundled Web plugins once and composes their aggregate patch', () => {
+    const home = temporaryHome()
+    const prepared = prepareDesktopProfile('1', home, 'win32')
+    const rows = composeEntries([prepared.patches])
+    expect(rows.filter(row => row.id === 'web-ui-compat')).toHaveLength(1)
+    expect(rows.find(row => row.id === 'web-ui-compat')?.name).toBe('@linxin666/dsh-web-all')
+    expect(desktopBundleList(['@linxin666/dsh-web-all', '@linxin666/dsh-web-all']))
+      .toEqual(['@deepseek-ai/dsh-base', '@deepseek-ai/dsh-web-app', '@linxin666/dsh-web-all'])
+    ensureDesktopProfile(home)
+    expect(readFileSync(join(prepared.profile.dir, 'package.json'), 'utf8')).toContain('@linxin666/dsh-web-all')
   })
 
   it('repairs a base-only CLI profile without replacing dependencies', () => {
@@ -164,6 +177,7 @@ describe('desktop profile composition', {
     expect(repaired.dsh.profile.bundles).toEqual([
       '@deepseek-ai/dsh-base',
       '@deepseek-ai/dsh-web-app',
+      '@linxin666/dsh-web-all',
       'third-party-plugin',
     ])
     expect(repaired.dependencies).toEqual({ 'third-party-plugin': '^1.2.3' })
@@ -195,6 +209,7 @@ describe('desktop profile composition', {
     expect(repaired.dsh.profile.bundles).toEqual([
       '@deepseek-ai/dsh-base',
       '@deepseek-ai/dsh-web-app',
+      '@linxin666/dsh-web-all',
     ])
   })
 

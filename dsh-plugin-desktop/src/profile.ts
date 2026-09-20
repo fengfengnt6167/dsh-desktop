@@ -239,7 +239,7 @@ function requiredWebBundles(): string[] {
   if (template === undefined) {
     throw new Error(`${BIN_NAME}: installed dsh-app-boot has no web profile template`)
   }
-  return [...template.bundles]
+  return [...template.bundles, '@linxin666/dsh-web-all']
 }
 
 /** User patch lifecycle inherited from the matching upstream Web profile. */

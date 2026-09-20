@@ -277,6 +277,7 @@
     "@deepseek-ai/dsh-workflow": "0.1.5-rc.2",
     "@deepseek-ai/dsh-workspace": "0.1.5-rc.2",
     "@deepseek-ai/schemastery": "^3.18.2",
+    "@linxin666/dsh-web-all": "file:../vendor/dsh-web/linxin666-dsh-web-all-560bf6a6343c6187046c9b9c2242ccb0f5e865655ea0fae6e9fa3e507596fff1.tgz",
     "adm-zip": "^0.6.0",
     "dsh-community-market": "0.1.0-dev.0",
     "dshmarket": "1.38.1",

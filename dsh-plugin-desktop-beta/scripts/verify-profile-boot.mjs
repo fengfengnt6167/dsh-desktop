@@ -43,6 +43,8 @@ const LAN_HTTPS = Object.freeze({
   async stop() { return LAN_HTTPS_SNAPSHOT },
 })
 const home = mkdtempSync(join(tmpdir(), 'dsh-desktop-profile-'))
+const previousHome = process.env.DSH_HOME
+process.env.DSH_HOME = home
 let ctx
 let releasePackageResolver
 let pnpmRuntime
@@ -327,6 +329,41 @@ try {
   }
   const graph = JSON.parse(bootMatch[1])
   const ids = new Set(graph.entries.map(entry => entry.id))
+  if (!ids.has('@linxin666/dsh-web-all')) {
+    throw new Error('assembled Web graph is missing the bundled dsh-web client')
+  }
+  for (const path of [
+    '/api/dsh-web-all/degraded',
+    '/api/plugin-manager/failures',
+    '/api/market/installed',
+    '/api/preset-center/state',
+    '/api/skin-center/v2/catalog',
+    '/api/dsh-usage/overview',
+    '/api/pet/state',
+    '/api/task-board/state',
+    '/api/pair/status',
+  ]) {
+    const probe = await fetch(new URL(path, expectedUrl), {
+      headers: {
+        [BROWSER_ACCESS.rendererHeader.name]: BROWSER_ACCESS.rendererHeader.value,
+        Cookie: cookie,
+        Origin: new URL(expectedUrl).origin,
+      },
+      signal: AbortSignal.timeout(10_000),
+    })
+    if (probe.status !== 200 || !probe.headers.get('content-type')?.includes('application/json')) {
+      throw new Error(`bundled plugin route ${path} failed: HTTP ${probe.status}`)
+    }
+    const document = await probe.json()
+    if (path === '/api/plugin-manager/failures' && document.pluginRoot !== prepared.profile.dir) {
+      throw new Error('bundled plugin manager selected the wrong Desktop profile')
+    }
+    if (path === '/api/dsh-web-all/degraded'
+      && (document.ok !== true || !Array.isArray(document.degraded) || document.degraded.length !== 0)) {
+      throw new Error(`bundled plugins degraded: ${JSON.stringify(document)}`)
+    }
+  }
+  console.log('Bundled dsh-web client and nine Host health routes verified.')
   const aaEnabled = aaRequested && !brokenAa
   if (ids.has('@agents-anywhere/dsh-bridge-next') !== aaEnabled) throw new Error('AA client graph does not match explicit selection')
   if (aaEnabled && (!ctx.get('agentsAnywhereRuntime') || !ctx.get('agentsAnywhereOnboarding'))) {
@@ -361,5 +398,7 @@ try {
   await ctx?.fiber.dispose()
   releasePackageResolver?.()
   pnpmRuntime?.dispose()
+  if (previousHome === undefined) delete process.env.DSH_HOME
+  else process.env.DSH_HOME = previousHome
   rmSync(home, { recursive: true, force: true })
 }

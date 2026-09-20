@@ -183,6 +183,14 @@ try {
   try {
     const profileRequire = createRequire(profileManifestPath)
     const installRequire = createRequire(installAnchor)
+    const webAll = installRequire('@linxin666/dsh-web-all/package.json') as { dependencies: Record<string, string> }
+    for (const name of ['@linxin666/dsh-web-all', ...Object.keys(webAll.dependencies).filter(name => name.startsWith('@linxin666/'))]) {
+      const entry = installRequire.resolve(name)
+      assert(packagedDirectoryRoot.test(entry) || packagedAsarRoot.test(entry), `resolved bundled plugin outside the application: ${name}`)
+      await import(pathToFileURL(entry).href)
+    }
+    const webClient = installRequire.resolve('@linxin666/dsh-web-all/client')
+    assert(existsSync(webClient), 'omitted the bundled dsh-web browser artifact')
     const consumer = profileRequire('dsh-packaged-cjs-consumer') as {
       Schema?: unknown
       manifest?: { name?: unknown }

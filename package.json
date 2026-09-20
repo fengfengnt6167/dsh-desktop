@@ -1138,7 +1138,27 @@
     "@deepseek-ai/dsh-web-search-exa@npm:0.1.6-alpha.2": "file:vendor/dsh-runtime/0.1.6-alpha.2/deepseek-ai-dsh-web-search-exa-0.1.6-alpha.2.tgz",
     "@deepseek-ai/dsh-web-search-exa@npm:^0.1.6-alpha.2": "file:vendor/dsh-runtime/0.1.6-alpha.2/deepseek-ai-dsh-web-search-exa-0.1.6-alpha.2.tgz",
     "@deepseek-ai/dsh-web-search-perplexity@npm:0.1.6-alpha.2": "file:vendor/dsh-runtime/0.1.6-alpha.2/deepseek-ai-dsh-web-search-perplexity-0.1.6-alpha.2.tgz",
-    "@deepseek-ai/dsh-web-search-perplexity@npm:^0.1.6-alpha.2": "file:vendor/dsh-runtime/0.1.6-alpha.2/deepseek-ai-dsh-web-search-perplexity-0.1.6-alpha.2.tgz"
+    "@deepseek-ai/dsh-web-search-perplexity@npm:^0.1.6-alpha.2": "file:vendor/dsh-runtime/0.1.6-alpha.2/deepseek-ai-dsh-web-search-perplexity-0.1.6-alpha.2.tgz",
+    "@linxin666/dsh-client-ui-community-plugins": "file:vendor/dsh-web/linxin666-dsh-client-ui-community-plugins-b364c9decae39435d7b896d5d505aa164c4ea032363d5e0dcf91924c3d1b6664.tgz",
+    "@linxin666/dsh-client-ui-git-graph": "file:vendor/dsh-web/linxin666-dsh-client-ui-git-graph-9bd38074f20d76fcbfdf832e0854feaa598e651e5ef9f342653b831d48e15a16.tgz",
+    "@linxin666/dsh-client-ui-market": "file:vendor/dsh-web/linxin666-dsh-client-ui-market-b249e3555f318a3a4cfde25c4110a2c0e11a7dbd0d76a882f7a0add3eff1b11d.tgz",
+    "@linxin666/dsh-client-ui-model-capabilities": "file:vendor/dsh-web/linxin666-dsh-client-ui-model-capabilities-e1051ef869e680f5a6b052a23502345bb64747ca685923dd62f94422c9dc8c16.tgz",
+    "@linxin666/dsh-client-ui-plugin-manager": "file:vendor/dsh-web/linxin666-dsh-client-ui-plugin-manager-8f25df157db33d95f5bee3d36cc735fafc9e65e085441c90fedf8f966d2fb1e1.tgz",
+    "@linxin666/dsh-client-ui-preset-center": "file:vendor/dsh-web/linxin666-dsh-client-ui-preset-center-0ca1cea2228ddacc1420e4c6117b08fdc88284cbba93c4ee1e3651c12a75f229.tgz",
+    "@linxin666/dsh-client-ui-skill-explorer": "file:vendor/dsh-web/linxin666-dsh-client-ui-skill-explorer-4b27d2e5427d4cd105874c0625d6423662868dfc39ebe154ee4b59d6f514eb72.tgz",
+    "@linxin666/dsh-client-ui-skin-center": "file:vendor/dsh-web/linxin666-dsh-client-ui-skin-center-91692d67dd71eb6c95280c671aea6a0956c11572b2c4cf0842934096698aca08.tgz",
+    "@linxin666/dsh-client-ui-task-board": "file:vendor/dsh-web/linxin666-dsh-client-ui-task-board-5966663604284b67074d4267df50a7deaa776e29d7901ddee27f69216de87a9b.tgz",
+    "@linxin666/dsh-client-ui-web-ui-settings": "file:vendor/dsh-web/linxin666-dsh-client-ui-web-ui-settings-c90fc0b080b08e28d53a254f855322958f4d417221d04b6906ba3b194f22d1e2.tgz",
+    "@linxin666/dsh-doctor": "file:vendor/dsh-web/linxin666-dsh-doctor-445eba88c53421e3e365301fb3bfc9bf0f10c460426ed522cddb8693bed0847a.tgz",
+    "@linxin666/dsh-i18n": "file:vendor/dsh-web/linxin666-dsh-i18n-26a9c8103aaa201b14b4956ad4987c04869bd812b91ce0838285edf3af60ad32.tgz",
+    "@linxin666/dsh-liangshen": "file:vendor/dsh-web/linxin666-dsh-liangshen-d982978d7b32e9ae3ea748fa41463f0efac4cce9a982de4eab4e1c6e9f91dab2.tgz",
+    "@linxin666/dsh-pet": "file:vendor/dsh-web/linxin666-dsh-pet-7a0f7bd4ef0b67ad9236f03122e39809fbbb73057c54dc6f3b281ce975bbee85.tgz",
+    "@linxin666/dsh-remote-web-ui": "file:vendor/dsh-web/linxin666-dsh-remote-web-ui-4703612d059542b08f920f177e54fa3624534181495b5b6690fa07ce392d521b.tgz",
+    "@linxin666/dsh-session-archive": "file:vendor/dsh-web/linxin666-dsh-session-archive-f30d470aec1b1dc69c2afe83ae71668c4b1cac227778be18a78a038ebbaaa410.tgz",
+    "@linxin666/dsh-ssh": "file:vendor/dsh-web/linxin666-dsh-ssh-b5d585cfa5cd8b2f32ea096ecdc62bb2ab11b901468d70345104c793459e0e3f.tgz",
+    "@linxin666/dsh-tool-describe-image": "file:vendor/dsh-web/linxin666-dsh-tool-describe-image-fd181161a016195a2c43001b4648b92d66d7167067102b299a33ec0a3b6980ec.tgz",
+    "@linxin666/dsh-usage": "file:vendor/dsh-web/linxin666-dsh-usage-3f214ed94db35df62df636bfda9bc48e94355768f0c4e2e1ca9d9d7f5c2ffcdd.tgz",
+    "@linxin666/dsh-web-all": "file:vendor/dsh-web/linxin666-dsh-web-all-560bf6a6343c6187046c9b9c2242ccb0f5e865655ea0fae6e9fa3e507596fff1.tgz"
   },
   "dependenciesMeta": {
     "@deepseek-ai/dsh-subprocess-local": {
@@ -1170,6 +1190,9 @@
     }
   },
   "scripts": {
+    "plugins:prepare": "node scripts/prepare-dsh-web.mjs",
+    "plugins:verify": "node scripts/verify-dsh-web.mjs",
+    "plugins:test": "node --test scripts/prepare-dsh-web.test.mjs",
     "build": "yarn workspace dsh-community-market build && yarn workspace dsh-plugin-desktop build && yarn workspace dsh-plugin-desktop-beta build",
     "typecheck": "yarn workspace dsh-plugin-desktop typecheck && yarn workspace dsh-plugin-desktop-beta typecheck && yarn workspace dsh-community-market typecheck",
     "test": "yarn workspace dsh-plugin-desktop test && yarn workspace dsh-plugin-desktop-beta test && yarn workspace dsh-community-market test",

@@ -1,0 +1,146 @@
+{
+  "commit": "fbd5f6c229bc9134d23caa7f33c2730e06526446",
+  "dirty": true,
+  "packages": [
+    {
+      "name": "@linxin666/dsh-client-ui-community-plugins",
+      "version": "0.3.23",
+      "directory": "packages/dsh-community-plugins",
+      "artifact": "linxin666-dsh-client-ui-community-plugins-b364c9decae39435d7b896d5d505aa164c4ea032363d5e0dcf91924c3d1b6664.tgz",
+      "sha256": "b364c9decae39435d7b896d5d505aa164c4ea032363d5e0dcf91924c3d1b6664"
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-git-graph",
+      "version": "0.3.23",
+      "directory": "packages/dsh-git-graph",
+      "artifact": "linxin666-dsh-client-ui-git-graph-9bd38074f20d76fcbfdf832e0854feaa598e651e5ef9f342653b831d48e15a16.tgz",
+      "sha256": "9bd38074f20d76fcbfdf832e0854feaa598e651e5ef9f342653b831d48e15a16"
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-market",
+      "version": "0.3.23",
+      "directory": "packages/dsh-market",
+      "artifact": "linxin666-dsh-client-ui-market-b249e3555f318a3a4cfde25c4110a2c0e11a7dbd0d76a882f7a0add3eff1b11d.tgz",
+      "sha256": "b249e3555f318a3a4cfde25c4110a2c0e11a7dbd0d76a882f7a0add3eff1b11d"
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-model-capabilities",
+      "version": "0.3.23",
+      "directory": "packages/dsh-model-capabilities",
+      "artifact": "linxin666-dsh-client-ui-model-capabilities-e1051ef869e680f5a6b052a23502345bb64747ca685923dd62f94422c9dc8c16.tgz",
+      "sha256": "e1051ef869e680f5a6b052a23502345bb64747ca685923dd62f94422c9dc8c16"
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-plugin-manager",
+      "version": "0.3.23",
+      "directory": "packages/dsh-plugin-manager",
+      "artifact": "linxin666-dsh-client-ui-plugin-manager-8f25df157db33d95f5bee3d36cc735fafc9e65e085441c90fedf8f966d2fb1e1.tgz",
+      "sha256": "8f25df157db33d95f5bee3d36cc735fafc9e65e085441c90fedf8f966d2fb1e1"
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-preset-center",
+      "version": "0.3.23",
+      "directory": "packages/dsh-preset-center",
+      "artifact": "linxin666-dsh-client-ui-preset-center-0ca1cea2228ddacc1420e4c6117b08fdc88284cbba93c4ee1e3651c12a75f229.tgz",
+      "sha256": "0ca1cea2228ddacc1420e4c6117b08fdc88284cbba93c4ee1e3651c12a75f229"
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-skill-explorer",
+      "version": "0.3.23",
+      "directory": "packages/dsh-skill-explorer",
+      "artifact": "linxin666-dsh-client-ui-skill-explorer-4b27d2e5427d4cd105874c0625d6423662868dfc39ebe154ee4b59d6f514eb72.tgz",
+      "sha256": "4b27d2e5427d4cd105874c0625d6423662868dfc39ebe154ee4b59d6f514eb72"
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-skin-center",
+      "version": "0.3.23",
+      "directory": "packages/skins/skin-center",
+      "artifact": "linxin666-dsh-client-ui-skin-center-91692d67dd71eb6c95280c671aea6a0956c11572b2c4cf0842934096698aca08.tgz",
+      "sha256": "91692d67dd71eb6c95280c671aea6a0956c11572b2c4cf0842934096698aca08"
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-task-board",
+      "version": "0.3.23",
+      "directory": "packages/dsh-task-board",
+      "artifact": "linxin666-dsh-client-ui-task-board-5966663604284b67074d4267df50a7deaa776e29d7901ddee27f69216de87a9b.tgz",
+      "sha256": "5966663604284b67074d4267df50a7deaa776e29d7901ddee27f69216de87a9b"
+    },
+    {
+      "name": "@linxin666/dsh-client-ui-web-ui-settings",
+      "version": "0.3.23",
+      "directory": "packages/dsh-web-settings",
+      "artifact": "linxin666-dsh-client-ui-web-ui-settings-c90fc0b080b08e28d53a254f855322958f4d417221d04b6906ba3b194f22d1e2.tgz",
+      "sha256": "c90fc0b080b08e28d53a254f855322958f4d417221d04b6906ba3b194f22d1e2"
+    },
+    {
+      "name": "@linxin666/dsh-doctor",
+      "version": "0.3.23",
+      "directory": "packages/dsh-doctor",
+      "artifact": "linxin666-dsh-doctor-445eba88c53421e3e365301fb3bfc9bf0f10c460426ed522cddb8693bed0847a.tgz",
+      "sha256": "445eba88c53421e3e365301fb3bfc9bf0f10c460426ed522cddb8693bed0847a"
+    },
+    {
+      "name": "@linxin666/dsh-i18n",
+      "version": "0.3.23",
+      "directory": "packages/dsh-i18n",
+      "artifact": "linxin666-dsh-i18n-26a9c8103aaa201b14b4956ad4987c04869bd812b91ce0838285edf3af60ad32.tgz",
+      "sha256": "26a9c8103aaa201b14b4956ad4987c04869bd812b91ce0838285edf3af60ad32"
+    },
+    {
+      "name": "@linxin666/dsh-liangshen",
+      "version": "0.3.23",
+      "directory": "packages/dsh-liangshen",
+      "artifact": "linxin666-dsh-liangshen-d982978d7b32e9ae3ea748fa41463f0efac4cce9a982de4eab4e1c6e9f91dab2.tgz",
+      "sha256": "d982978d7b32e9ae3ea748fa41463f0efac4cce9a982de4eab4e1c6e9f91dab2"
+    },
+    {
+      "name": "@linxin666/dsh-pet",
+      "version": "0.3.23",
+      "directory": "packages/dsh-pet",
+      "artifact": "linxin666-dsh-pet-7a0f7bd4ef0b67ad9236f03122e39809fbbb73057c54dc6f3b281ce975bbee85.tgz",
+      "sha256": "7a0f7bd4ef0b67ad9236f03122e39809fbbb73057c54dc6f3b281ce975bbee85"
+    },
+    {
+      "name": "@linxin666/dsh-remote-web-ui",
+      "version": "0.3.23",
+      "directory": "packages/dsh-remote-web-ui",
+      "artifact": "linxin666-dsh-remote-web-ui-4703612d059542b08f920f177e54fa3624534181495b5b6690fa07ce392d521b.tgz",
+      "sha256": "4703612d059542b08f920f177e54fa3624534181495b5b6690fa07ce392d521b"
+    },
+    {
+      "name": "@linxin666/dsh-session-archive",
+      "version": "0.3.23",
+      "directory": "packages/dsh-session-archive",
+      "artifact": "linxin666-dsh-session-archive-f30d470aec1b1dc69c2afe83ae71668c4b1cac227778be18a78a038ebbaaa410.tgz",
+      "sha256": "f30d470aec1b1dc69c2afe83ae71668c4b1cac227778be18a78a038ebbaaa410"
+    },
+    {
+      "name": "@linxin666/dsh-ssh",
+      "version": "0.3.23",
+      "directory": "packages/dsh-ssh",
+      "artifact": "linxin666-dsh-ssh-b5d585cfa5cd8b2f32ea096ecdc62bb2ab11b901468d70345104c793459e0e3f.tgz",
+      "sha256": "b5d585cfa5cd8b2f32ea096ecdc62bb2ab11b901468d70345104c793459e0e3f"
+    },
+    {
+      "name": "@linxin666/dsh-tool-describe-image",
+      "version": "0.3.23",
+      "directory": "packages/dsh-tool-describe-image",
+      "artifact": "linxin666-dsh-tool-describe-image-fd181161a016195a2c43001b4648b92d66d7167067102b299a33ec0a3b6980ec.tgz",
+      "sha256": "fd181161a016195a2c43001b4648b92d66d7167067102b299a33ec0a3b6980ec"
+    },
+    {
+      "name": "@linxin666/dsh-usage",
+      "version": "0.3.23",
+      "directory": "packages/dsh-usage",
+      "artifact": "linxin666-dsh-usage-3f214ed94db35df62df636bfda9bc48e94355768f0c4e2e1ca9d9d7f5c2ffcdd.tgz",
+      "sha256": "3f214ed94db35df62df636bfda9bc48e94355768f0c4e2e1ca9d9d7f5c2ffcdd"
+    },
+    {
+      "name": "@linxin666/dsh-web-all",
+      "version": "0.3.23",
+      "directory": "packages/dsh-web-all",
+      "artifact": "linxin666-dsh-web-all-560bf6a6343c6187046c9b9c2242ccb0f5e865655ea0fae6e9fa3e507596fff1.tgz",
+      "sha256": "560bf6a6343c6187046c9b9c2242ccb0f5e865655ea0fae6e9fa3e507596fff1"
+    }
+  ]
+}
